@@ -6,6 +6,7 @@
 .hero {
   position: relative;
   height: 100vh;
+  margin: 0;
   background: url('images/scenery_pic.jpg') no-repeat center center/cover;
   display: flex;
   flex-direction: column;
