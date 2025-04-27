@@ -76,6 +76,23 @@ html, body {
   text-align: center;
 }
 
+.contact-container {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  padding: 50px 20px; /* Same padding as other containers if needed */
+  text-align: center;
+}
+
+.contact-icons {
+  margin-top: 20px;
+}
+
+.contact-icon img {
+  width: 40px;
+  margin: 0 10px;
+  filter: invert(1); /* Makes icons white if they are black icons originally */
+}
+
 .button {
   margin-top: 20px;
   display: inline-block;
