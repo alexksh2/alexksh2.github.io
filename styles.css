@@ -1,4 +1,4 @@
-body {
+9body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
@@ -6,7 +6,7 @@ body {
 .hero {
   position: relative;
   height: 100vh;
-  background: url('images/your-background-image.jpg') no-repeat center center/cover;
+  background: url('images/scenery_pic.jpg') no-repeat center center/cover;
   display: flex;
   flex-direction: column;
   align-items: center;
