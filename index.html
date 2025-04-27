@@ -4,48 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Personal Website</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    /* First Container */
-    .hero {
-      position: relative;
-      height: 100vh; /* Full screen height */
-      background: url('your-background-image.jpg') no-repeat center center/cover;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-align: center;
-    }
-
-    /* Transparent black overlay */
-    .hero::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background: rgba(0, 0, 0, 0.4); /* black with 40% transparency */
-      z-index: 1;
-    }
-
-    /* Text inside the container */
-    .hero-content {
-      position: relative;
-      z-index: 2; /* above the overlay */
-    }
-
-    /* Other containers */
-    .container {
-      padding: 80px 20px;
-      text-align: center;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -69,5 +28,6 @@
     <p>Here are some projects I have worked on recently.</p>
   </section>
 
+  <script src="script.js"></script>
 </body>
 </html>
