@@ -1,53 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My GitHub Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        header {
-            background-color: #4CAF50;
-            padding: 20px 0;
-            color: white;
-        }
-        main {
-            padding: 40px 20px;
-        }
-        footer {
-            background-color: #222;
-            color: #aaa;
-            padding: 10px 0;
-            font-size: 14px;
-        }
-        a {
-            color: #4CAF50;
-            text-decoration: none;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* First Container */
+    .hero {
+      position: relative;
+      height: 100vh; /* Full screen height */
+      background: url('your-background-image.jpg') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+
+    /* Transparent black overlay */
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.4); /* black with 40% transparency */
+      z-index: 1;
+    }
+
+    /* Text inside the container */
+    .hero-content {
+      position: relative;
+      z-index: 2; /* above the overlay */
+    }
+
+    /* Other containers */
+    .container {
+      padding: 80px 20px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Hi, I'm Alex Khoo</h1>
-        <p>Welcome to my GitHub Pages website!</p>
-    </header>
 
-    <main>
-        <h2>About This Page</h2>
-        <p>This page is hosted with GitHub Pages. Stay tuned for more updates!</p>
-        <p>Visit my <a href="https://github.com/yourusername" target="_blank">GitHub Profile</a>.</p>
-    </main>
+  <!-- First container (hero) -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Alex Khoo</h1>
+      <p>Welcome to my personal website</p>
+    </div>
+  </section>
 
-    <footer>
-        &copy; 2025 Alex Khoo. All rights reserved.
-    </footer>
+  <!-- Second container (example) -->
+  <section class="container">
+    <h2>About Me</h2>
+    <p>This is the about me section. I love technology, travel, and design.</p>
+  </section>
+
+  <!-- Third container (example) -->
+  <section class="container" style="background-color: #f5f5f5;">
+    <h2>Projects</h2>
+    <p>Here are some projects I have worked on recently.</p>
+  </section>
+
 </body>
 </html>
-
