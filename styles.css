@@ -57,6 +57,11 @@ html, body {
   animation-delay: 0.5s;
 }
 
+.hero-content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .container {
   padding: 80px 20px;
   text-align: center;
