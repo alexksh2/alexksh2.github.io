@@ -218,12 +218,13 @@ html, body {
 }
 
 .footer {
+  
   text-align: center;
   padding: 10px;
   font-size: 14px;
   background-color: #000; /* Black background */
   color: #fff; /* White text */
-  margin-top: 50px;
+  margin-top: 0px;
 }
 
 
