@@ -170,29 +170,6 @@ html, body {
   text-align: left;
 }
 
-/*
-/* Timeline Markers - Enhanced Dark Blue with Numbers */
-.timeline-item::before {
-  content: counter(timeline-counter); /* Numbered markers */
-  counter-increment: timeline-counter;
-  position: absolute;
-  top: 30px;
-  width: 28px; /* Slightly larger */
-  height: 28px;
-  background: #001057; /* Dark blue */
-  border: 3px solid #fff;
-  border-radius: 50%;
-  z-index: 3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-weight: bold;
-  font-size: 12px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16);
-}
-*/
-
 .timeline-item.left::before {
   right: -14px; /* Adjusted for new size */
 }
