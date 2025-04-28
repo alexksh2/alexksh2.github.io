@@ -119,91 +119,124 @@ html, body {
   color: #2c3e50;
 }
 
-/* Timeline Container */
+/* Timeline Container - Enhanced */
 .timeline {
   position: relative;
   max-width: 900px;
   margin: auto;
-  padding: 20px 0;
+  padding: 40px 0; /* Increased padding */
+  counter-reset: timeline-counter; /* For numbered markers */
 }
 
+/* Vertical Line - Dark Blue with Gradient */
 .timeline::after {
   content: '';
   position: absolute;
   width: 6px;
-  background-color: #3498db;
+  background: linear-gradient(to bottom, #1a237e, #0d47a1); /* Dark blue gradient */
   top: 0;
   bottom: 0;
   left: 50%;
-  transform: translateX(-50%); /* Better centering method */
+  transform: translateX(-50%);
   z-index: 0;
+  border-radius: 3px; /* Softened edges */
+  box-shadow: 0 4px 8px rgba(26, 35, 126, 0.2); /* Subtle shadow */
 }
 
-/* Timeline Items */
+/* Timeline Items - Enhanced */
 .timeline-item {
-  padding: 20px 0; /* Changed from 20px 30px */
+  padding: 30px 0; /* Increased spacing */
   position: relative;
   width: 50%;
   box-sizing: border-box;
+  transition: all 0.3s ease; /* Smooth hover transitions */
 }
 
+.timeline-item:hover {
+  transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Left/Right Alignment */
 .timeline-item.left {
   left: 0;
-  padding-right: 30px; /* Add padding only to content side */
+  padding-right: 50px; /* More breathing room */
+  text-align: right;
 }
 
 .timeline-item.right {
   left: 50%;
-  padding-left: 30px; /* Add padding only to content side */
+  padding-left: 50px; /* More breathing room */
+  text-align: left;
 }
 
-/* Timeline Marker (Blue Button) */
+/* Timeline Markers - Enhanced Dark Blue with Numbers */
 .timeline-item::before {
-  content: " ";
+  content: counter(timeline-counter); /* Numbered markers */
+  counter-increment: timeline-counter;
   position: absolute;
-  top: 25px; /* Adjusted from 15px for better vertical alignment */
-  width: 20px;
-  height: 20px;
-  background-color: #3498db;
-  border: 3px solid white; /* Added white border for better visibility */
+  top: 30px;
+  width: 28px; /* Slightly larger */
+  height: 28px;
+  background: #1a237e; /* Dark blue */
+  border: 3px solid #fff;
   border-radius: 50%;
-  z-index: 1;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16);
 }
 
 .timeline-item.left::before {
-  right: -10px;
+  right: -14px; /* Adjusted for new size */
 }
 
 .timeline-item.right::before {
-  left: -10px;
+  left: -14px; /* Adjusted for new size */
 }
 
-/* Timeline Content */
+/* Timeline Content - Enhanced */
 .timeline-content {
-  padding: 20px;
+  padding: 25px;
   background-color: white;
   position: relative;
-  border-radius: 8px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+  border-radius: 12px; /* Softer corners */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Deeper shadow */
   animation: fadeSlide 0.8s ease forwards;
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent; /* For hover effect */
 }
 
-/* Rest of your existing styles remain the same */
+.timeline-content:hover {
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  border-left-color: #1a237e; /* Dark blue accent */
+}
+
+/* Typography Enhancements */
 .timeline-content h3 {
   margin-top: 0;
-  font-size: 20px;
-  color: #2c3e50;
+  font-size: 22px;
+  color: #1a237e; /* Dark blue */
+  margin-bottom: 10px;
 }
 
 .timeline-content p {
   font-size: 16px;
   color: #555;
+  line-height: 1.6; /* Better readability */
 }
 
 .timeline-content small {
+  display: block;
   font-size: 14px;
-  color: #999;
+  color: #777;
+  margin-top: 10px;
+  font-weight: 500;
 }
+
 /* Animations */
 @keyframes fadeSlide {
   0% {
