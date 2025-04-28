@@ -133,7 +133,7 @@ html, body {
   content: '';
   position: absolute;
   width: 6px;
-  background: linear-gradient(to bottom, #1a237e, #0d47a1); /* Dark blue gradient */
+  background: linear-gradient(to bottom, #1a237e, #001057); /* Dark blue gradient */
   top: 0;
   bottom: 0;
   left: 50%;
@@ -212,14 +212,14 @@ html, body {
 
 .timeline-content:hover {
   box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-  border-left-color: #1a237e; /* Dark blue accent */
+  border-left-color: #001057; /* Dark blue accent */
 }
 
 /* Typography Enhancements */
 .timeline-content h3 {
   margin-top: 0;
   font-size: 22px;
-  color: #1a237e; /* Dark blue */
+  color: #001057; /* Dark blue */
   margin-bottom: 10px;
 }
 
