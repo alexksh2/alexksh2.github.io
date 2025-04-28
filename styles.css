@@ -170,6 +170,7 @@ html, body {
   text-align: left;
 }
 
+
 /* Timeline Markers - Enhanced Dark Blue with Numbers */
 .timeline-item::before {
   content: counter(timeline-counter); /* Numbered markers */
@@ -190,6 +191,7 @@ html, body {
   font-size: 12px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16);
 }
+*/
 
 .timeline-item.left::before {
   right: -14px; /* Adjusted for new size */
