@@ -217,14 +217,10 @@ html, body {
   font-weight: 500;
 }
 
-.footer {
-  
-  text-align: right;
-  padding: 0px;
-  font-size: 14px;
-  background-color: #000; /* Black background */
-  color: #fff; /* White text */
-  margin-top: 0px;
+.copyright {
+  margin-top: 10px; /* only small margin between icons and copyright */
+  font-size: 12px;
+  color: #fff;
 }
 
 
