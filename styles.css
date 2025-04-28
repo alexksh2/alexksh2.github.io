@@ -141,6 +141,7 @@ html, body {
   z-index: 0;
   border-radius: 3px; /* Softened edges */
   box-shadow: 0 4px 8px rgba(26, 35, 126, 0.2); /* Subtle shadow */
+  z-index: 1;
 }
 
 /* Timeline Items - Enhanced */
@@ -180,7 +181,7 @@ html, body {
   background: #001057; /* Dark blue */
   border: 3px solid #fff;
   border-radius: 50%;
-  z-index: 2;
+  z-index: 3;
   display: flex;
   align-items: center;
   justify-content: center;
