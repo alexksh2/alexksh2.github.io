@@ -167,7 +167,7 @@ html, body {
 .timeline-item.right {
   left: 50%;
   padding-left: 50px; /* More breathing room */
-  text-align: left;
+  text-align: right;
 }
 
 .timeline-item.left::before {
