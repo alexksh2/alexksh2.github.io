@@ -79,7 +79,7 @@ html, body {
 .contact-container {
   background-color: #000; /* Black background */
   color: #fff; /* White text */
-  padding: 50px 20px; /* Same padding as other containers if needed */
+  padding: 50px 20px 0px; /* Same padding as other containers if needed */
   text-align: center;
 }
 
