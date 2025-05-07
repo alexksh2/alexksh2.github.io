@@ -145,12 +145,14 @@ html, body {
   margin-bottom: 40px;
 }
 
-.timeline-item:nth-child(even) .timeline-content {
-  margin-left: auto;
+.timeline-item.left .timeline-content {
+  margin-right: auto;
+  text-align: right;
 }
 
-.timeline-item:nth-child(odd) .timeline-content {
-  margin-right: auto;
+.timeline-item.right .timeline-content {
+  margin-left: auto;
+  text-align: left;
 }
 
 /* Timeline Content Box */
