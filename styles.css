@@ -149,7 +149,7 @@ html, body {
   left: 0;
   justify-content: flex-end;
   margin-right: auto;
-  text-align: right;
+  text-align: left;
 }
 
 .timeline-item.right .timeline-content {
