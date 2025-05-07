@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alex Khoo Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alex Khoo - Personal Website</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
-      <img src="images/pic_profile.jpg" alt="Alex Khoo Photo" class="profile-pic">
+      <img src="images/pic_profile.jpg" alt="Alex Khoo Photo" class="profile-pic" />
       <h1>Alex Khoo Shien How</h1>
-      <p>BComputing Computer Science (AI) <br> BBA Business (Business Analytics)</p>
+      <p>BComputing Computer Science (AI)<br>BBA Business (Business Analytics)</p>
       <p><i>Double Degree Undergraduate</i></p>
-      <br><br>
-      <p><i>ASEAN Undergraduate Scholar</i></p> 
+      <br>
+      <p><i>ASEAN Undergraduate Scholar</i></p>
       <p><i>Nanyang Technological University, Singapore</i></p>
     </div>
   </section>
 
-  <!-- About Me Section -->
+  <!-- About Section -->
   <section class="container">
     <h2>About Me</h2>
     <p>My interest lies within the domain of finance and computer science (quant finance, machine learning, data science, business analytics etc).</p>
@@ -31,16 +31,14 @@
   <!-- Education Section -->
   <section class="container education-container" id="education">
     <h2>Education</h2>
-
     <div class="timeline">
       <div class="timeline-item left">
         <div class="timeline-content">
           <h3>Nanyang Technological University, Singapore</h3>
-          <p>BComp Computer Science (AI) <br> BBA Business (Business Analytics)</p>
+          <p>BComp Computer Science (AI)<br>BBA Business (Business Analytics)</p>
           <small>2022 – 2026 (Expected)</small>
         </div>
       </div>
-
       <div class="timeline-item right">
         <div class="timeline-content">
           <h3>York University, Canada <br>(Semester Exchange)</h3>
@@ -48,12 +46,11 @@
           <small>Jan 2025 – Apr 2025</small>
         </div>
       </div>
-
       <div class="timeline-item left">
         <div class="timeline-content">
           <h3>Fudan University, China <br>(Summer Exchange)</h3>
           <p>TBA</p>
-          <small>Jun 2025 - July 2025</small>
+          <small>Jun 2025 – Jul 2025</small>
         </div>
       </div>
     </div>
@@ -63,7 +60,6 @@
   <section class="container" style="background-color: #f5f5f5;">
     <h2>Projects</h2>
     <p>Here are some projects I have worked on recently.</p>
-    <!-- You can list your project cards here later -->
   </section>
 
   <!-- Contact Section -->
@@ -71,18 +67,29 @@
     <h2>Contact Me</h2>
     <div class="contact-icons">
       <a href="https://www.linkedin.com/in/alex-khoo-shien-how/" target="_blank" class="contact-icon">
-        <img src="images/linkedin.png" alt="LinkedIn">
+        <img src="images/linkedin.png" alt="LinkedIn" />
       </a>
       <a href="mailto:alexkhooshienhow11@gmail.com" class="contact-icon">
-        <img src="images/gmail.png" alt="Email">
+        <img src="images/gmail.png" alt="Email" />
       </a>
+      <p class="copyright">&copy; 2025 Alex Khoo</p>
     </div>
-    <p class="copyright">&copy; 2025 Alex Khoo</p>
   </section>
 
-  <!-- Optional: Floating Button -->
-  <a href="#education" class="floating-button">Back to Education</a>
+  <!-- Floating Button -->
+  <a href="#education" class="timeline-scroll-button" id="floatingBtn">Back to Education</a>
 
-  <script src="script.js"></script>
+  <!-- Script to Show Floating Button -->
+  <script>
+    const floatingBtn = document.getElementById('floatingBtn');
+    const educationSection = document.getElementById('education');
+
+    window.addEventListener('scroll', () => {
+      const rect = educationSection.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+      floatingBtn.style.display = isVisible ? 'block' : 'none';
+    });
+  </script>
 </body>
 </html>
+
