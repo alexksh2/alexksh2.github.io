@@ -69,7 +69,7 @@ html, body {
   text-align: center;
 }
 
-/* Contact */
+/* Contact Section */
 .contact-container {
   background-color: #000;
   color: #fff;
@@ -138,16 +138,26 @@ html, body {
 
 .timeline-item {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: stretch;
   position: relative;
   width: 100%;
   margin-bottom: 40px;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  margin-left: auto;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  margin-right: auto;
 }
 
 /* Timeline Content Box */
 .timeline-content {
   width: 100%;
   max-width: 320px;
+  min-height: 240px;
   margin: 0 auto;
   padding: 25px;
   background-color: #fff;
@@ -156,7 +166,9 @@ html, body {
   animation: fadeSlide 0.8s ease forwards;
   border-left: 4px solid transparent;
   text-align: left;
-  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .timeline-content:hover {
@@ -169,20 +181,22 @@ html, body {
   margin-top: 0;
   font-size: 22px;
   color: #001057;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   font-weight: 700;
+  line-height: 1.3;
 }
 
 .timeline-content p {
   font-size: 16px;
   color: #555;
+  flex-grow: 1;
 }
 
 .timeline-content small {
   font-size: 14px;
   color: #777;
   display: block;
-  margin-top: 10px;
+  margin-top: auto;
   font-weight: 500;
 }
 
@@ -228,5 +242,11 @@ html, body {
   .timeline-content {
     width: 100%;
     max-width: 90%;
+    min-height: 240px;
+  }
+
+  .timeline-item:nth-child(even) .timeline-content,
+  .timeline-item:nth-child(odd) .timeline-content {
+    margin: 0 auto;
   }
 }
