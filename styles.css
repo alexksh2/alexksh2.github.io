@@ -145,15 +145,20 @@ html, body {
   margin-bottom: 40px;
 }
 
-.timeline-item.left .timeline-content {
+.timeline-item.left .timeline-content{
+  left: 0;
+  justify-content: flex-end;
   margin-right: auto;
   text-align: right;
 }
 
 .timeline-item.right .timeline-content {
+  left: 50%;
+  justify-content: flex-start;
   margin-left: auto;
   text-align: left;
 }
+
 
 /* Timeline Content Box */
 .timeline-content {
