@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alex Khoo - Personal Website</title>
+  <title>Alex Khoo Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -12,11 +12,11 @@
   <section class="hero">
     <div class="hero-content">
       <img src="images/pic_profile.jpg" alt="Alex Khoo Photo" class="profile-pic" />
-      <h1>Alex Khoo Shi How</h1>
-      <p>BComputing Computer Science (AI)<br>BBA Business (Business Analytics)</p>
+      <h1>Alex Khoo Shien How</h1>
+      <p>BComputing Computer Science (AI)<br/>BBA Business (Business Analytics)</p>
       <p><i>Double Degree Undergraduate</i></p>
-      <br>
-      <p><i>ASEAN Undergraduate Scholar</i></p>
+      <br/>
+      <p><i>ASEAN Undergraduate Scholar</i></p> 
       <p><i>Nanyang Technological University, Singapore</i></p>
     </div>
   </section>
@@ -28,39 +28,40 @@
     <p>I’m not a typical engineer or business person. I aim to deliver <i><b>value</b></i> to you.</p>
   </section>
 
-  <!-- Education Section -->
-  <section class="container education-container" id="education">
+  <!-- Education Timeline -->
+  <section class="container" id="education">
     <h2>Education</h2>
     <div class="timeline">
-      <div class="timeline-item left">
+
+      <div class="timeline-item">
         <div class="timeline-content">
           <h3>Nanyang Technological University, Singapore</h3>
           <p>BComp Computer Science (AI)<br>BBA Business (Business Analytics)</p>
           <small>2022 – 2026 (Expected)</small>
         </div>
       </div>
-      <div class="timeline-item right">
+
+      <div class="timeline-item">
         <div class="timeline-content">
           <h3>York University, Canada <br>(Semester Exchange)</h3>
           <p>Schulich Business School</p>
           <small>Jan 2025 – Apr 2025</small>
         </div>
       </div>
-      <div class="timeline-item left">
+
+      <div class="timeline-item">
         <div class="timeline-content">
           <h3>Fudan University, China <br>(Summer Exchange)</h3>
           <p>TBA</p>
           <small>Jun 2025 – Jul 2025</small>
         </div>
       </div>
+
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section class="container" style="background-color: #f5f5f5;">
-    <h2>Projects</h2>
-    <p>Here are some projects I have worked on recently.</p>
-  </section>
+  <!-- Floating Scroll Button -->
+  <div class="timeline-scroll-button" id="scrollBtn">Contact Me</div>
 
   <!-- Contact Section -->
   <section class="container contact-container">
@@ -76,20 +77,24 @@
     </div>
   </section>
 
-  <!-- Floating Button -->
-  <a href="#education" class="timeline-scroll-button" id="floatingBtn">Back to Education</a>
-
-  <!-- Script to Show Floating Button -->
   <script>
-    const floatingBtn = document.getElementById('floatingBtn');
-    const educationSection = document.getElementById('education');
+    // Scroll button visibility and smooth scroll
+    const scrollBtn = document.getElementById('scrollBtn');
 
     window.addEventListener('scroll', () => {
-      const rect = educationSection.getBoundingClientRect();
-      const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
-      floatingBtn.style.display = isVisible ? 'block' : 'none';
+      if (window.scrollY > 400) {
+        scrollBtn.classList.add('show');
+      } else {
+        scrollBtn.classList.remove('show');
+      }
+    });
+
+    scrollBtn.addEventListener('click', () => {
+      document.querySelector('.contact-container').scrollIntoView({ behavior: 'smooth' });
     });
   </script>
+
 </body>
 </html>
+
 
