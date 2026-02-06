@@ -238,26 +238,6 @@
     }
   });
 
-  // ---------- Quick Resume Accordion ----------
-  var resumeToggle = document.getElementById("resumeToggle");
-  var resumeContent = document.getElementById("resumeContent");
-
-  resumeToggle.addEventListener("click", function () {
-    var isOpen = resumeToggle.getAttribute("aria-expanded") === "true";
-    resumeToggle.setAttribute("aria-expanded", !isOpen);
-    if (isOpen) {
-      resumeContent.classList.remove("open");
-      setTimeout(function () {
-        resumeContent.setAttribute("hidden", "");
-      }, 400);
-    } else {
-      resumeContent.removeAttribute("hidden");
-      // Trigger reflow
-      void resumeContent.offsetWidth;
-      resumeContent.classList.add("open");
-    }
-  });
-
   // ---------- Toast notifications ----------
   var toastContainer = document.getElementById("toastContainer");
 
