@@ -258,65 +258,6 @@
     }
   });
 
-  // ---------- Contact form ----------
-  var contactForm = document.getElementById("contactForm");
-
-  contactForm.addEventListener("submit", function (e) {
-    e.preventDefault();
-    var name = document.getElementById("contactName").value.trim();
-    var email = document.getElementById("contactEmail").value.trim();
-    var message = document.getElementById("contactMessage").value.trim();
-
-    if (!name || !email || !message) {
-      showToast("Please fill in all fields.");
-      return;
-    }
-
-    // Since this is front-end only, open mailto
-    var subject = encodeURIComponent("Portfolio Contact from " + name);
-    var body = encodeURIComponent(
-      "From: " + name + " (" + email + ")\n\n" + message
-    );
-    window.location.href =
-      "mailto:alex.khoo@example.com?subject=" + subject + "&body=" + body;
-    showToast("Opening your email client...");
-  });
-
-  // ---------- Copy email ----------
-  var copyEmailBtn = document.getElementById("copyEmail");
-
-  copyEmailBtn.addEventListener("click", function () {
-    var emailText = "alex.khoo@example.com";
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard
-        .writeText(emailText)
-        .then(function () {
-          showToast("Email copied to clipboard!");
-        })
-        .catch(function () {
-          fallbackCopy(emailText);
-        });
-    } else {
-      fallbackCopy(emailText);
-    }
-  });
-
-  function fallbackCopy(text) {
-    var ta = document.createElement("textarea");
-    ta.value = text;
-    ta.style.position = "fixed";
-    ta.style.left = "-9999px";
-    document.body.appendChild(ta);
-    ta.select();
-    try {
-      document.execCommand("copy");
-      showToast("Email copied to clipboard!");
-    } catch (err) {
-      showToast("Could not copy. Email: " + text);
-    }
-    document.body.removeChild(ta);
-  }
-
   // ---------- Toast notifications ----------
   var toastContainer = document.getElementById("toastContainer");
 
