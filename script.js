@@ -6,6 +6,12 @@
 (function () {
   "use strict";
 
+  // ---------- Scroll to top on refresh ----------
+  if (history.scrollRestoration) {
+    history.scrollRestoration = "manual";
+  }
+  window.scrollTo(0, 0);
+
   // ---------- Theme toggle ----------
   const themeToggle = document.getElementById("themeToggle");
   const html = document.documentElement;
