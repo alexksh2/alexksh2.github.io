@@ -277,6 +277,16 @@ html:not(.dark) .icon-moon {
   max-width: 720px;
 }
 
+.hero-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--border);
+  margin-bottom: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
 .hero-badge {
   display: inline-block;
   font-size: 0.8rem;
