@@ -970,6 +970,11 @@ html.dark .tag-featured {
 
 /* ---------- Responsive ---------- */
 @media (max-width: 768px) {
+  .reveal-section {
+    opacity: 1;
+    transform: none;
+  }
+
   .mobile-toggle {
     display: block;
   }
