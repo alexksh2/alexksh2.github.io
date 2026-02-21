@@ -128,7 +128,7 @@
             </div>
             <ul class="timeline-bullets">
               <li>Spearheaded a 5-person consulting team as Team Lead, orchestrating cross-functional collaboration with C-suite stakeholders to align operational feasibility, IT infrastructure capabilities, and strategic partnership priorities on direct-digital sales strategy formulation.</li>
-              <li>Developed probabilistic lead-scoring and churn models using XGBoost with sigmoid and isotonic calibration to optimize customer acquisition and retention strategies.</li>
+              <li>Developed probabilistic lead-scoring and churn models using XGBoost with sigmoid and isotonic calibration to optimize customer acquisition &amp; retention strategies, projected to generate $40M in incremental profit and 15% cost efficiency gains.</li>
               <li>Engineered end-to-end machine learning pipeline including feature construction, cross-validation, and calibrated probability outputs for decision threshold optimization.</li>
               <li>Applied F1-optimized decision threshold selection via precision-recall curve analysis on calibrated probability outputs to maximize the precision-recall trade-off, enabling quantitative segmentation of leads and at-risk policyholders into actionable risk-ranked intervention tiers.</li>
               <li>Designed a Next.js + FastAPI full-stack real-time analytics dashboard with model retraining triggers.</li>
@@ -314,14 +314,17 @@
             <div class="project-tags">
               <span class="tag tag-ml">NLP</span>
               <span class="tag tag-ml">ML</span>
+              <span class="tag tag-featured">Aug–Sep 2024</span>
             </div>
             <h3 class="project-title">NLP Sentiment Classification</h3>
             <p class="project-desc">
-              Bidirectional LSTM architecture with Optuna hyperparameter optimization for large-scale sentiment analysis.
+              Developed and fine-tuned a BiLSTM model for sentiment classification using Optuna hyperparameter optimisation, incorporating multi-head self-attention and min-max pooling frameworks to achieve 79% accuracy.
             </p>
             <div class="project-outcomes">
               <span class="outcome">79% Accuracy</span>
               <span class="outcome">BiLSTM + Optuna</span>
+              <span class="outcome">Multi-head Self-Attention</span>
+              <span class="outcome">Min-Max Pooling</span>
             </div>
           </div>
         </article>
@@ -329,33 +332,40 @@
         <article class="project-card" data-category="ml">
           <div class="project-card-inner">
             <div class="project-tags">
+              <span class="tag tag-ml">ML</span>
               <span class="tag tag-ml">Computer Vision</span>
               <span class="tag tag-systems">Robotics</span>
+              <span class="tag tag-featured">MDP Aug–Sep 2024</span>
             </div>
-            <h3 class="project-title">YOLOv8 Maze Robot Image Recognition</h3>
+            <h3 class="project-title">Autonomous Maze Robot – YOLOv8 Image Recognition</h3>
             <p class="project-desc">
-              Real-time object detection system for autonomous maze-solving robot using YOLOv8 architecture.
+              Developed and fine-tuned a YOLOv8 object detection model in Python as part of a robotic system capable of autonomously traversing a maze while detecting images displayed within the arena. Automated image annotation and augmentation pipelines to generate and label 35k+ training images, significantly improving model training workflow efficiency.
             </p>
             <div class="project-outcomes">
               <span class="outcome">85.7% Accuracy</span>
+              <span class="outcome">35k+ Training Images</span>
               <span class="outcome">Real-time Inference</span>
+              <span class="outcome">Automated Annotation</span>
             </div>
           </div>
         </article>
 
-        <article class="project-card" data-category="quant">
+        <article class="project-card" data-category="ml">
           <div class="project-card-inner">
             <div class="project-tags">
+              <span class="tag tag-ml">ML</span>
               <span class="tag tag-quant">RL</span>
-              <span class="tag tag-quant">Quant</span>
+              <span class="tag tag-featured">Jan–Apr 2024</span>
             </div>
             <h3 class="project-title">Reinforcement Learning Double Q-Learning</h3>
             <p class="project-desc">
-              Implementation of Double Q-Learning for optimal control in stochastic environments, achieving stable convergence.
+              Developed a Reinforcement Learning agent using Double Q-Learning with Prioritised Experience Replay and Epsilon-Greedy Policy to balance a pole on a cart under constraints, achieving an average reward exceeding 195 within 100 episodes.
             </p>
             <div class="project-outcomes">
               <span class="outcome">Avg Reward &gt;195</span>
               <span class="outcome">100 Episodes</span>
+              <span class="outcome">Prioritised Experience Replay</span>
+              <span class="outcome">Epsilon-Greedy Policy</span>
             </div>
             <a href="https://github.com/alexksh2/Reinforcement-Learing-Double-Q" target="_blank" rel="noopener noreferrer" class="btn btn-outline project-btn">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg>
@@ -369,15 +379,16 @@
             <div class="project-tags">
               <span class="tag tag-systems">Systems</span>
               <span class="tag tag-ml">LLM</span>
+              <span class="tag tag-featured">CZ2102 Aug–Sep 2024</span>
             </div>
             <h3 class="project-title">LLM-based SQL Plan Explanation &amp; Cost Comparison</h3>
             <p class="project-desc">
-              Database systems project using large language models to provide natural language explanations of SQL query execution
-              plans and automated cost comparison analysis.
+              Utilised a Llama3-8B-8192 model with text parsing techniques to generate natural language explanations of PostgreSQL query execution plans and perform automated cost comparison between the default SQL Plan and the Alternative Query Plan (AQP).
             </p>
             <div class="project-outcomes">
-              <span class="outcome">Query Optimization</span>
-              <span class="outcome">LLM Integration</span>
+              <span class="outcome">Llama3-8B-8192</span>
+              <span class="outcome">PostgreSQL</span>
+              <span class="outcome">SQL vs AQP Cost Analysis</span>
             </div>
           </div>
         </article>
