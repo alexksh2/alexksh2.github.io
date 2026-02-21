@@ -867,6 +867,27 @@ html.dark .tag-featured {
   background: var(--accent);
 }
 
+.cert-year {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-left: 4px;
+}
+
+.activity-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 2px;
+}
+
+.activity-date {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
 .activity-content p {
   font-size: 0.9rem;
   color: var(--text-secondary);
