@@ -83,7 +83,12 @@
   // ---------- Scroll reveal (IntersectionObserver) ----------
   var revealSections = document.querySelectorAll(".reveal-section");
 
-  if ("IntersectionObserver" in window) {
+  // On mobile, skip animation and show all sections immediately
+  if (window.innerWidth <= 768) {
+    revealSections.forEach(function (s) {
+      s.classList.add("revealed");
+    });
+  } else if ("IntersectionObserver" in window) {
     var observer = new IntersectionObserver(
       function (entries) {
         entries.forEach(function (entry) {
