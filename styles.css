@@ -877,6 +877,98 @@ html.dark .tag-featured {
   color: var(--text-primary);
 }
 
+/* ---------- Awards ---------- */
+.awards-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.award-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.award-item:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow);
+}
+
+.award-badge {
+  flex-shrink: 0;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+  margin-top: 2px;
+}
+
+.badge-global {
+  background: rgba(30, 58, 95, 0.1);
+  color: var(--accent);
+}
+
+html.dark .badge-global {
+  background: rgba(91, 140, 184, 0.15);
+  color: var(--accent);
+}
+
+.badge-champion {
+  background: rgba(16, 124, 65, 0.1);
+  color: #107c41;
+}
+
+html.dark .badge-champion {
+  background: rgba(52, 211, 153, 0.12);
+  color: #34d399;
+}
+
+.badge-gold {
+  background: rgba(180, 130, 10, 0.12);
+  color: #9a6e08;
+}
+
+html.dark .badge-gold {
+  background: rgba(212, 175, 55, 0.15);
+  color: #d4af37;
+}
+
+.badge-silver {
+  background: rgba(100, 116, 139, 0.12);
+  color: #4e6071;
+}
+
+html.dark .badge-silver {
+  background: rgba(148, 163, 184, 0.1);
+  color: #94a3b8;
+}
+
+.award-body {
+  flex: 1;
+}
+
+.award-title {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.45;
+  margin-bottom: 4px;
+}
+
+.award-year {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
 /* ---------- Footer ---------- */
 .footer {
   border-top: 1px solid var(--border);
@@ -1020,6 +1112,10 @@ html.dark .tag-featured {
   }
 
   .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .awards-list {
     grid-template-columns: 1fr;
   }
 
