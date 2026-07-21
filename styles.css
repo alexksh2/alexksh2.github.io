@@ -585,6 +585,30 @@ html:not(.dark) .icon-moon {
   opacity: 0.6;
 }
 
+.timeline-highlight {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 16px 20px 18px;
+  margin: 14px 0 4px;
+}
+
+.timeline-highlight-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.timeline-highlight .timeline-bullets {
+  margin: 0;
+}
+
+.timeline-highlight .timeline-bullets li:last-child {
+  margin-bottom: 0;
+}
+
 .project-btn {
   margin-top: 16px;
   font-size: 0.85rem;
