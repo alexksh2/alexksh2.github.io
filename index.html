@@ -123,6 +123,24 @@
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <div class="timeline-header">
+              <h3>Software Engineer Intern (Agentic AI Engineering)</h3>
+              <span class="timeline-company">YU &amp; Associates, New Jersey, U.S.</span>
+              <span class="timeline-date">May &ndash; Jul 2026</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Designed and developed the firm's RFP-pursuit response system as a suite of orchestrated LLM agents that auto-generates the full proposal package (tailored project resumes, themes, Go/No-Go memo) and document authoring: ~3,000 hours saved a year over 200+ RFPs (&lt;450 per pursuit).</li>
+              <li>Established two end-to-end agentic tracks feeding a multi-agent orchestrator: a Go/No-Go pursuit-decision engine that generates a structured decision document, and a resume system that extracts skills, tags, and re-indexes each employee across 56 employees into per-RFP tailored 2-page resumes with org-chart-driven selection gates.</li>
+              <li>Architected the project-generation pipeline end-to-end (scraper &rarr; OCR &rarr; pdfplumber), a two-stage map-reduce Bronze authoring flow, deterministic multi-format rendering (.txt/.docx/.pdf), and an eval/judge harness scoring output against 373 ground-truth sheets, to generate direct reports for 2,508 projects.</li>
+              <li>Parallelized the pipeline's I/O-bound stages via a 3-pass extraction cascade (~14&times;), a two-stage project-network draft crawl (~22&ndash;24&times;), and a document-level connector pool (~20s), over a shared keep-alive connection pool and a concurrency gate tuned to the API's ~32-concurrent soft-throttle knee.</li>
+              <li>Drove LLM fact-coverage to a reproducible &ge;90% target (frozen reference-fact enumeration, union prior-N authoring, plus anti-dilution token budgets and NEVER-DROP prompt rules) and hardened integrity and determinism with crawler/contamination guards using boundary-aware ID matching, temperature=0 + fixed-seed LLM transport, and per-fact authoring/judge provenance tagging.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
               <h3>Management Consultant Intern</h3>
               <span class="timeline-company">Phillip General Insurance (Cambodia) / Phillip Capital</span>
               <span class="timeline-date">Dec 2025</span>
