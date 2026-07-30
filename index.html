@@ -152,7 +152,7 @@
               <li>Applied F1-optimized decision threshold selection via precision-recall curve analysis on calibrated probability outputs to maximize the precision-recall trade-off, enabling quantitative segmentation of leads and at-risk policyholders into actionable risk-ranked intervention tiers.</li>
               <li>Designed a Next.js + FastAPI full-stack real-time analytics dashboard with model retraining triggers.</li>
             </ul>
-            <a href="https://drive.google.com/drive/folders/1qdQiajiDRyFaB_UDhujnxLMQxwaTMo8V?usp=share_link" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="margin-top:1rem;display:inline-flex;align-items:center;">
+            <a href="https://drive.google.com/file/d/1bg_N85riCHAioAAOe--ejw67b5YME0f-/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="margin-top:1rem;display:inline-flex;align-items:center;">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right:8px"><path d="M6.28 3L2 10.5l4.28 7.5h11.44L22 10.5 17.72 3H6.28zm1.04 1.5h9.36l3.64 6.38-3.64 6.12H7.32L3.68 10.88 7.32 4.5zM8.5 9.75L6 14h12l-2.5-4.25H8.5zm1.5 1.5h4l1.5 2.5H8.5l1.5-2.5z"/></svg>
               View Selected Presentation Slides
             </a>
@@ -362,10 +362,11 @@
               <span class="tag tag-featured">FYP 2026</span>
             </div>
             <h3 class="project-title">Self-Evolving Fuzzy Ensemble (eFE) for Algorithmic Trading</h3>
-            <p class="project-desc">
-              A novel framework combining regime detection, deep temporal models (GRU/TCN + attention), concept drift detection,
-              and RL-based fuzzy rule optimization. Backtested across multiple asset classes against benchmark indices.
-            </p>
+            <ul class="timeline-bullets">
+              <li>Engineered a quantitative alpha-generation model &mdash; evaluated out-of-sample across 8 assets and 15 horizons via leakage-free causal backtesting; observed 0.30 skill-R&sup2; against a persistence benchmark.</li>
+              <li>Designed and backtested a reinforcement-learning portfolio allocation overlay to optimize risk-adjusted returns, observing an out-of-sample Sharpe ratio improvement of ~55% and ~70% lower max drawdown vs. an equal-weight baseline across a multi-crisis stress window; applied validation-based model selection to guard against overfitting.</li>
+              <li>Ran ablation studies to help isolate the source of forecasting skill and guide subsequent architecture choices, finding evidence that online adaptation &mdash; rather than model nonlinearity &mdash; was the larger contributor.</li>
+            </ul>
             <div class="project-outcomes">
               <span class="outcome">Sharpe Ratio Optimization</span>
               <span class="outcome">Max Drawdown Control</span>
